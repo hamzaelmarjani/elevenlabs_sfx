@@ -13,6 +13,10 @@ A type-safe, async Rust client for the [ElevenLabs Sound Effects API](https://el
 - **Customizable**: Output formats, Duration seconds and Prompt influence
 - **Tokio Ready**: Works seamlessly with the Tokio runtime
 
+## Check-out Also:
+
+- **[Elevenlabs TTS](https://github.com/hamzaelmarjani/elevenlabs_tts)**: A type-safe, async Rust client for the ElevenLabs Text-to-Speech API.
+
 ## Installation
 
 Add this to your `Cargo.toml`:
