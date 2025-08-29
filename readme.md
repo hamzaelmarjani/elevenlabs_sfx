@@ -15,8 +15,17 @@ A type-safe, async Rust client for the [ElevenLabs Sound Effects API](https://el
 
 ## Check-out Also:
 
-- **[Elevenlabs TTS](https://github.com/hamzaelmarjani/elevenlabs_tts)**: A type-safe, async Rust client for the ElevenLabs Text-to-Speech API.
-- **[Elevenlabs STT](https://github.com/hamzaelmarjani/elevenlabs_stt)**: A type-safe, async Rust client for the ElevenLabs Speech To Text API.
+**This project is part of a milestone to implement all ElevenLabs APIs in Rust.**
+
+- **[Elevenlabs TTS](https://crates.io/crates/elevenlabs_tts)**: ElevenLabs Text-to-Speech API. ✅
+- **[Elevenlabs TTD](https://crates.io/crates/elevenlabs_ttd)**: ElevenLabs Text-to-Dialogue API. ✅
+- **[Elevenlabs STT](https://crates.io/crates/elevenlabs_stt)**: ElevenLabs Speech-to-Text API. ✅
+- **[Elevenlabs SFX](https://crates.io/crates/elevenlabs_sfx)**: ElevenLabs Sound Effects API. ✅
+- **Elevenlabs TTV**: ElevenLabs Text-to-Voice API. ⏳
+- **Elevenlabs VC**: ElevenLabs Voice Changer API. ⏳
+- **Elevenlabs CM**: ElevenLabs Music Compose API. ⏳
+- **Elevenlabs AUI**: ElevenLabs Audio Isolation API. ⏳
+- **Elevenlabs DUB**: ElevenLabs Dubbing API. ⏳
 
 ## Installation
 
@@ -24,7 +33,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-elevenlabs_sfx = "0.0.2"
+elevenlabs_sfx = "0.0.3"
 ```
 
 ## Quick Start
@@ -34,7 +43,7 @@ use elevenlabs_sfx::ElevenLabsSFXClient;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let client = ElevenLabsSFXSClient::new("your-api-key");
+    let client = ElevenLabsSFXClient::new("your-api-key");
 
     let audio = client
         .sound_effects("Ghost Breath Wind")
